@@ -1846,8 +1846,39 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11</code></pre>
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VzcGVuc2lvbiA8LSByZWFkX2NzdihmaWxlPVwiU3VzcGVuc2lvbl9Db2lsLmNzdlwiKVxuYGBgIn0= -->
+<pre class="r"><code>suspension &lt;- read_csv(file=&quot;Suspension_Coil.csv&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUm93czogMTUwIENvbHVtbnM6IDNcbuKUgOKUgCBDb2x1bW4gc3BlY2lmaWNhdGlvbiDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIBcbkRlbGltaXRlcjogXCIsXCJcbmNociAoMik6IFZlaGljbGVJRCwgTWFudWZhY3R1cmluZ19Mb3RcbmRibCAoMSk6IFBTSVxuXG7ihLkgVXNlIGBzcGVjKClgIHRvIHJldHJpZXZlIHRoZSBmdWxsIGNvbHVtbiBzcGVjaWZpY2F0aW9uIGZvciB0aGlzIGRhdGEuXG7ihLkgU3BlY2lmeSB0aGUgY29sdW1uIHR5cGVzIG9yIHNldCBgc2hvd19jb2xfdHlwZXMgPSBGQUxTRWAgdG8gcXVpZXQgdGhpcyBtZXNzYWdlLlxuIn0= -->
+<pre><code>Rows: 150 Columns: 3
+── Column specification ─────────────────────────────────────────────────────────────────────
+Delimiter: &quot;,&quot;
+chr (2): VehicleID, Manufacturing_Lot
+dbl (1): PSI
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KbGlicmFyeShkcGx5cikKYGBgCgouCmBgYHtyfQptZWNoYWNhciA8LSByZWFkX2NzdihmaWxlPSJNZWNoYUNhcl9tcGcuY3N2IikKYGBgCgpgYGB7cn0KbG0obXBnIH4gKHZlaGljbGVfbGVuZ3RoICsgdmVoaWNsZV93ZWlnaHQgKyBzcG9pbGVyX2FuZ2xlICsgZ3JvdW5kX2NsZWFyYW5jZSArIEFXRCksIGRhdGEgPSBtZWNoYWNhcikKCnN1bW1hcnkobG0obXBnIH4gKHZlaGljbGVfbGVuZ3RoICsgdmVoaWNsZV93ZWlnaHQgKyBzcG9pbGVyX2FuZ2xlICsgZ3JvdW5kX2NsZWFyYW5jZSArIEFXRCksIGRhdGEgPSBtZWNoYWNhcikpCmBgYAoK</div>
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudG90YWxfc3VtbWFyeSA8LSBzdW1tYXJpemUoc3VzcGVuc2lvbiwgTWVhbiA9IG1lYW4oUFNJKSwgTWVkaWFuID0gbWVkaWFuKFBTSSksIFZhcmlhbmNlID0gdmFyKFBTSSksIFNEID0gc2QoUFNJKSlcbmBgYCJ9 -->
+<pre class="r"><code>total_summary &lt;- summarize(suspension, Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG90X3N1bW1hcnkgPC0gZ3JvdXBfYnkoc3VzcGVuc2lvbiwgTWFudWZhY3R1cmluZ19Mb3QpICU+JSBzdW1tYXJpemUoTWVhbiA9IG1lYW4oUFNJKSwgTWVkaWFuID0gbWVkaWFuKFBTSSksIFZhcmlhbmNlID0gdmFyKFBTSSksIFNEID0gc2QoUFNJKSlcbmBgYCJ9 -->
+<pre class="r"><code>lot_summary &lt;- group_by(suspension, Manufacturing_Lot) %&gt;% summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KbGlicmFyeShkcGx5cikKYGBgCgouCmBgYHtyfQptZWNoYWNhciA8LSByZWFkX2NzdihmaWxlPSJNZWNoYUNhcl9tcGcuY3N2IikKYGBgCgpgYGB7cn0KbG0obXBnIH4gKHZlaGljbGVfbGVuZ3RoICsgdmVoaWNsZV93ZWlnaHQgKyBzcG9pbGVyX2FuZ2xlICsgZ3JvdW5kX2NsZWFyYW5jZSArIEFXRCksIGRhdGEgPSBtZWNoYWNhcikKCnN1bW1hcnkobG0obXBnIH4gKHZlaGljbGVfbGVuZ3RoICsgdmVoaWNsZV93ZWlnaHQgKyBzcG9pbGVyX2FuZ2xlICsgZ3JvdW5kX2NsZWFyYW5jZSArIEFXRCksIGRhdGEgPSBtZWNoYWNhcikpCmBgYAoKYGBge3J9CnN1c3BlbnNpb24gPC0gcmVhZF9jc3YoZmlsZT0iU3VzcGVuc2lvbl9Db2lsLmNzdiIpCmBgYAoKYGBge3J9CnRvdGFsX3N1bW1hcnkgPC0gc3VtbWFyaXplKHN1c3BlbnNpb24sIE1lYW4gPSBtZWFuKFBTSSksIE1lZGlhbiA9IG1lZGlhbihQU0kpLCBWYXJpYW5jZSA9IHZhcihQU0kpLCBTRCA9IHNkKFBTSSkpCmBgYAoKYGBge3J9CmxvdF9zdW1tYXJ5IDwtIGdyb3VwX2J5KHN1c3BlbnNpb24sIE1hbnVmYWN0dXJpbmdfTG90KSAlPiUgc3VtbWFyaXplKE1lYW4gPSBtZWFuKFBTSSksIE1lZGlhbiA9IG1lZGlhbihQU0kpLCBWYXJpYW5jZSA9IHZhcihQU0kpLCBTRCA9IHNkKFBTSSkpCmBgYAoK</div>
 
 
 
