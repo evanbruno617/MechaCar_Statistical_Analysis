@@ -1877,8 +1877,96 @@ dbl (1): PSI
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VzcGVuc2lvbl9zYW1wbGUgPC0gc2FtcGxlKHN1c3BlbnNpb24kUFNJLCA1MCwgcmVwbGFjZSA9IEZBTFNFKVxuXG50LnRlc3Qoc3VzcGVuc2lvbl9zYW1wbGUsIG11ID0gbWVhbihzdXNwZW5zaW9uJFBTSSkpXG5gYGAifQ== -->
+<pre class="r"><code>suspension_sample &lt;- sample(suspension$PSI, 50, replace = FALSE)
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KbGlicmFyeShkcGx5cikKYGBgCgouCmBgYHtyfQptZWNoYWNhciA8LSByZWFkX2NzdihmaWxlPSJNZWNoYUNhcl9tcGcuY3N2IikKYGBgCgpgYGB7cn0KbG0obXBnIH4gKHZlaGljbGVfbGVuZ3RoICsgdmVoaWNsZV93ZWlnaHQgKyBzcG9pbGVyX2FuZ2xlICsgZ3JvdW5kX2NsZWFyYW5jZSArIEFXRCksIGRhdGEgPSBtZWNoYWNhcikKCnN1bW1hcnkobG0obXBnIH4gKHZlaGljbGVfbGVuZ3RoICsgdmVoaWNsZV93ZWlnaHQgKyBzcG9pbGVyX2FuZ2xlICsgZ3JvdW5kX2NsZWFyYW5jZSArIEFXRCksIGRhdGEgPSBtZWNoYWNhcikpCmBgYAoKYGBge3J9CnN1c3BlbnNpb24gPC0gcmVhZF9jc3YoZmlsZT0iU3VzcGVuc2lvbl9Db2lsLmNzdiIpCmBgYAoKYGBge3J9CnRvdGFsX3N1bW1hcnkgPC0gc3VtbWFyaXplKHN1c3BlbnNpb24sIE1lYW4gPSBtZWFuKFBTSSksIE1lZGlhbiA9IG1lZGlhbihQU0kpLCBWYXJpYW5jZSA9IHZhcihQU0kpLCBTRCA9IHNkKFBTSSkpCmBgYAoKYGBge3J9CmxvdF9zdW1tYXJ5IDwtIGdyb3VwX2J5KHN1c3BlbnNpb24sIE1hbnVmYWN0dXJpbmdfTG90KSAlPiUgc3VtbWFyaXplKE1lYW4gPSBtZWFuKFBTSSksIE1lZGlhbiA9IG1lZGlhbihQU0kpLCBWYXJpYW5jZSA9IHZhcihQU0kpLCBTRCA9IHNkKFBTSSkpCmBgYAoK</div>
+t.test(suspension_sample, mu = mean(suspension$PSI))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdE9uZSBTYW1wbGUgdC10ZXN0XG5cbmRhdGE6ICBzdXNwZW5zaW9uX3NhbXBsZVxudCA9IDAuNTc0MzYsIGRmID0gNDksIHAtdmFsdWUgPSAwLjU2ODRcbmFsdGVybmF0aXZlIGh5cG90aGVzaXM6IHRydWUgbWVhbiBpcyBub3QgZXF1YWwgdG8gMTQ5OC43OFxuOTUgcGVyY2VudCBjb25maWRlbmNlIGludGVydmFsOlxuIDE0OTcuOTggMTUwMC4yMlxuc2FtcGxlIGVzdGltYXRlczpcbm1lYW4gb2YgeCBcbiAgIDE0OTkuMSBcbiJ9 -->
+<pre><code>
+    One Sample t-test
+
+data:  suspension_sample
+t = 0.57436, df = 49, p-value = 0.5684
+alternative hypothesis: true mean is not equal to 1498.78
+95 percent confidence interval:
+ 1497.98 1500.22
+sample estimates:
+mean of x 
+   1499.1 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxub25lX2xvdCA9IHN1YnNldChzdXNwZW5zaW9uLCBzdXNwZW5zaW9uJE1hbnVmYWN0dXJpbmdfTG90ID09IFwiTG90MVwiKVxuXG50LnRlc3Qob25lX2xvdCRQU0ksIG11ID0gbWVhbihzdXNwZW5zaW9uJFBTSSkpXG5gYGAifQ== -->
+<pre class="r"><code>one_lot = subset(suspension, suspension$Manufacturing_Lot == &quot;Lot1&quot;)
+
+t.test(one_lot$PSI, mu = mean(suspension$PSI))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdE9uZSBTYW1wbGUgdC10ZXN0XG5cbmRhdGE6ICBvbmVfbG90JFBTSVxudCA9IDguNzE2MSwgZGYgPSA0OSwgcC12YWx1ZSA9IDEuNTY4ZS0xMVxuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHJ1ZSBtZWFuIGlzIG5vdCBlcXVhbCB0byAxNDk4Ljc4XG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gMTQ5OS43MTkgMTUwMC4yODFcbnNhbXBsZSBlc3RpbWF0ZXM6XG5tZWFuIG9mIHggXG4gICAgIDE1MDAgXG4ifQ== -->
+<pre><code>
+    One Sample t-test
+
+data:  one_lot$PSI
+t = 8.7161, df = 49, p-value = 1.568e-11
+alternative hypothesis: true mean is not equal to 1498.78
+95 percent confidence interval:
+ 1499.719 1500.281
+sample estimates:
+mean of x 
+     1500 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHdvX2xvdCA9IHN1YnNldChzdXNwZW5zaW9uLCBzdXNwZW5zaW9uJE1hbnVmYWN0dXJpbmdfTG90ID09IFwiTG90MlwiKVxuXG50LnRlc3QodHdvX2xvdCRQU0ksIG11ID0gbWVhbihzdXNwZW5zaW9uJFBTSSkpXG5gYGAifQ== -->
+<pre class="r"><code>two_lot = subset(suspension, suspension$Manufacturing_Lot == &quot;Lot2&quot;)
+
+t.test(two_lot$PSI, mu = mean(suspension$PSI))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdE9uZSBTYW1wbGUgdC10ZXN0XG5cbmRhdGE6ICB0d29fbG90JFBTSVxudCA9IDMuNjczOSwgZGYgPSA0OSwgcC12YWx1ZSA9IDAuMDAwNTkxMVxuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHJ1ZSBtZWFuIGlzIG5vdCBlcXVhbCB0byAxNDk4Ljc4XG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gMTQ5OS40MjMgMTUwMC45NzdcbnNhbXBsZSBlc3RpbWF0ZXM6XG5tZWFuIG9mIHggXG4gICAxNTAwLjIgXG4ifQ== -->
+<pre><code>
+    One Sample t-test
+
+data:  two_lot$PSI
+t = 3.6739, df = 49, p-value = 0.0005911
+alternative hypothesis: true mean is not equal to 1498.78
+95 percent confidence interval:
+ 1499.423 1500.977
+sample estimates:
+mean of x 
+   1500.2 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGhyZWVfbG90ID0gc3Vic2V0KHN1c3BlbnNpb24sIHN1c3BlbnNpb24kTWFudWZhY3R1cmluZ19Mb3QgPT0gXCJMb3QzXCIpXG5cbnQudGVzdCh0aHJlZV9sb3QkUFNJLCBtdSA9IG1lYW4oc3VzcGVuc2lvbiRQU0kpKVxuYGBgIn0= -->
+<pre class="r"><code>three_lot = subset(suspension, suspension$Manufacturing_Lot == &quot;Lot3&quot;)
+
+t.test(three_lot$PSI, mu = mean(suspension$PSI))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdE9uZSBTYW1wbGUgdC10ZXN0XG5cbmRhdGE6ICB0aHJlZV9sb3QkUFNJXG50ID0gLTEuNDMwNSwgZGYgPSA0OSwgcC12YWx1ZSA9IDAuMTU4OVxuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHJ1ZSBtZWFuIGlzIG5vdCBlcXVhbCB0byAxNDk4Ljc4XG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gMTQ5Mi40MzEgMTQ5OS44NDlcbnNhbXBsZSBlc3RpbWF0ZXM6XG5tZWFuIG9mIHggXG4gIDE0OTYuMTQgXG4ifQ== -->
+<pre><code>
+    One Sample t-test
+
+data:  three_lot$PSI
+t = -1.4305, df = 49, p-value = 0.1589
+alternative hypothesis: true mean is not equal to 1498.78
+95 percent confidence interval:
+ 1492.431 1499.849
+sample estimates:
+mean of x 
+  1496.14 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KbGlicmFyeShkcGx5cikKYGBgCgouCmBgYHtyfQptZWNoYWNhciA8LSByZWFkX2NzdihmaWxlPSJNZWNoYUNhcl9tcGcuY3N2IikKYGBgCgpgYGB7cn0KbG0obXBnIH4gKHZlaGljbGVfbGVuZ3RoICsgdmVoaWNsZV93ZWlnaHQgKyBzcG9pbGVyX2FuZ2xlICsgZ3JvdW5kX2NsZWFyYW5jZSArIEFXRCksIGRhdGEgPSBtZWNoYWNhcikKCnN1bW1hcnkobG0obXBnIH4gKHZlaGljbGVfbGVuZ3RoICsgdmVoaWNsZV93ZWlnaHQgKyBzcG9pbGVyX2FuZ2xlICsgZ3JvdW5kX2NsZWFyYW5jZSArIEFXRCksIGRhdGEgPSBtZWNoYWNhcikpCmBgYAoKYGBge3J9CnN1c3BlbnNpb24gPC0gcmVhZF9jc3YoZmlsZT0iU3VzcGVuc2lvbl9Db2lsLmNzdiIpCmBgYAoKYGBge3J9CnRvdGFsX3N1bW1hcnkgPC0gc3VtbWFyaXplKHN1c3BlbnNpb24sIE1lYW4gPSBtZWFuKFBTSSksIE1lZGlhbiA9IG1lZGlhbihQU0kpLCBWYXJpYW5jZSA9IHZhcihQU0kpLCBTRCA9IHNkKFBTSSkpCmBgYAoKYGBge3J9CmxvdF9zdW1tYXJ5IDwtIGdyb3VwX2J5KHN1c3BlbnNpb24sIE1hbnVmYWN0dXJpbmdfTG90KSAlPiUgc3VtbWFyaXplKE1lYW4gPSBtZWFuKFBTSSksIE1lZGlhbiA9IG1lZGlhbihQU0kpLCBWYXJpYW5jZSA9IHZhcihQU0kpLCBTRCA9IHNkKFBTSSkpCmBgYAoKYGBge3J9CnN1c3BlbnNpb25fc2FtcGxlIDwtIHNhbXBsZShzdXNwZW5zaW9uJFBTSSwgNTAsIHJlcGxhY2UgPSBGQUxTRSkKCnQudGVzdChzdXNwZW5zaW9uX3NhbXBsZSwgbXUgPSBtZWFuKHN1c3BlbnNpb24kUFNJKSkKYGBgCgpgYGB7cn0Kb25lX2xvdCA9IHN1YnNldChzdXNwZW5zaW9uLCBzdXNwZW5zaW9uJE1hbnVmYWN0dXJpbmdfTG90ID09ICJMb3QxIikKCnQudGVzdChvbmVfbG90JFBTSSwgbXUgPSBtZWFuKHN1c3BlbnNpb24kUFNJKSkKYGBgCgpgYGB7cn0KdHdvX2xvdCA9IHN1YnNldChzdXNwZW5zaW9uLCBzdXNwZW5zaW9uJE1hbnVmYWN0dXJpbmdfTG90ID09ICJMb3QyIikKCnQudGVzdCh0d29fbG90JFBTSSwgbXUgPSBtZWFuKHN1c3BlbnNpb24kUFNJKSkKYGBgCgpgYGB7cn0KdGhyZWVfbG90ID0gc3Vic2V0KHN1c3BlbnNpb24sIHN1c3BlbnNpb24kTWFudWZhY3R1cmluZ19Mb3QgPT0gIkxvdDMiKQoKdC50ZXN0KHRocmVlX2xvdCRQU0ksIG11ID0gbWVhbihzdXNwZW5zaW9uJFBTSSkpCmBgYAoK</div>
 
 
 
