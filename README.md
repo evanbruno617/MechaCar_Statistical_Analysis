@@ -24,5 +24,11 @@ However, when analyzing each lot individually, lot 3 exceeds this limit with 170
 After performing t-tests on the total data and the data of different lots I found that the p-value is 0.5 which does not make the PSI across manufacturing lots statisically different form the population. 
 
 However, when I calculated the t-tests for the individual lots I found that lot one and lot two were statisically different than the population mean with p values less than 0.001. 
+![image](https://github.com/evanbruno617/MechaCar_Statistical_Analysis/blob/main/images/t-test.png)
 
 The last lot, lot three, was not statistically different with a p-value of 0.15.
+![image](https://github.com/evanbruno617/MechaCar_Statistical_Analysis/blob/main/images/t-test_2.png)
+
+## Study Design: MechaCar vs Competition
+
+I will be testing ctiy and highway fuel efficiency. The null hypothesis is that there is no correlation between the length of a automobile and fuel efficiency. I would use a two sample t-test in order to compare fuel efficiency of cars of different lengths to see if there is a statistical significance. The data that is needed to run this test is the miles per gallon of cars of two different lengths driving for a minimum of 20 miles on both city roads and highways. 
